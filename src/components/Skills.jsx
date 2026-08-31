@@ -7,7 +7,7 @@ import {
   Cpu,
   Globe,
 } from "lucide-react";
-import "./Skills.css";
+import "./skills.css";
 
 function Skills() {
   const skills = [
