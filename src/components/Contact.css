@@ -1,0 +1,119 @@
+.contact {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 8%;
+  background: #050507;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: #7c3aed;
+  filter: blur(160px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.contact-label {
+  margin-bottom: 25px;
+  color: #9b6cff;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: clamp(50px, 8vw, 105px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  color: #f5f5f5;
+}
+
+.contact h2 span {
+  display: block;
+  background: linear-gradient(90deg, #c7a7ff, #6ca8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text {
+  max-width: 620px;
+  margin: 35px auto;
+  color: #92929d;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 100px;
+  color: #f5f5f5;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  transition: 0.3s ease;
+}
+
+.contact-email:hover {
+  transform: translateY(-4px);
+  border-color: rgba(155, 108, 255, 0.6);
+  box-shadow: 0 15px 50px rgba(124, 58, 237, 0.15);
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-socials a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #777783;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.contact-socials a:hover {
+  color: #c7a7ff;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 100px 6%;
+  }
+
+  .contact h2 {
+    letter-spacing: -3px;
+  }
+
+  .contact-text {
+    font-size: 15px;
+  }
+
+  .contact-socials {
+    flex-direction: column;
+    align-items: center;
+  }
+}
